@@ -1,0 +1,42 @@
+POST http://localhost:3333/monitor
+Content-Type: application/json
+
+{
+  "npedido": "Pedido 01",
+  "preco": "769,90",
+  "polegadas": "24"
+}
+
+
+###
+
+
+
+GET http://localhost:3333/monitor
+
+
+###
+
+
+GET http://localhost:3333/monitor?search=IFMS
+
+
+###
+
+
+PUT http://localhost:3333/monitores/e7ae668a-1657-494e-bcc7-a274c6eaad5d
+Content-Type: application/json
+
+{
+  "npedido": "Pedido do IFMS",
+  "preco": "1399",
+  "polegadas": "28"
+}
+
+
+
+###
+
+
+
+DELETE http://localhost:3333/monitores/701d0e1f-2fc9-41c5-a129-09252f371bbc
